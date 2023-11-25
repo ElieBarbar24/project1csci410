@@ -10,6 +10,7 @@ class LengthConverter {
     'yd': 914.4,
     'mi': 1609344
   };
+
   LengthConverter(this.value);
 
   double convert(String from, String to) {
