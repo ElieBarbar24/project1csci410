@@ -14,5 +14,6 @@ class TemperatureConverter{
       return (value * fromRate) / toRate;
     }
     return 0;
+
   }
 }
