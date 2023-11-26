@@ -30,7 +30,7 @@ class _History extends State<History>{
                     trailing: IconButton(
                       onPressed: (){
                         setState(() {
-                          history.remove(index);
+                          history.removeAt(index);
                         });
                       },
                       icon: Icon(Icons.delete,color: Colors.white,),
