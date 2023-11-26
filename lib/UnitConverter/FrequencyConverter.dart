@@ -13,8 +13,7 @@ class FrequencyConverter{
       double fromRate = conversionRates[from]!;
       double toRate = conversionRates[to]!;
       return (value * fromRate) / toRate;
-    }else{
-      throw Exception('Invalid units');
     }
+    return 0;
   }
 }
