@@ -569,7 +569,7 @@ class _HomeState extends State<Home> {
                   child: const Icon(
                     Icons.save,
                     size:25,
-                    color:Colors.white,
+                    color:Color(0xFFBDBDBD),
                   ),
                 ),
               ])
