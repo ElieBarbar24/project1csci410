@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project1csci410/Data.dart';
+import 'package:project1csci410/Pages/History.dart';
 import 'package:project1csci410/UnitConverter/AreaConverter.dart';
 import 'package:project1csci410/UnitConverter/DataConverter.dart';
 import 'package:project1csci410/UnitConverter/FrequencyConverter.dart';
@@ -541,10 +543,34 @@ class _HomeState extends State<Home> {
                   ),
                 ),
                 RawMaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (builder)=>History()));
+                  },
+                  fillColor: Colors.black,
+                  shape: const CircleBorder(),
+                  padding: const EdgeInsets.all(21.0),
+                  child: const Icon(
+                    Icons.history,
+                    size:25,
+                    color:Color(0xFFBDBDBD),
+                  ),
                 ),
                 RawMaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    history.add({
+                      "From":'$valuein $vfrom',
+                      "To": '$valueout $vto',
+                      "Date": '${DateTime.now().hour}:${DateTime.now().minute}:${DateTime.now().second}'
+                    });
+                  },
+                  fillColor: Colors.black,
+                  shape: const CircleBorder(),
+                  padding: EdgeInsets.all(21.0),
+                  child: const Icon(
+                    Icons.save,
+                    size:25,
+                    color:Color(0xFF113953),
+                  ),
                 ),
               ])
             ],
