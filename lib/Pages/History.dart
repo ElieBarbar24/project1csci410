@@ -10,7 +10,7 @@ class _History extends State<History>{
 
   @override
   Widget build(BuildContext context){
-    history.sort((a,b)=> a['Date']!.compareTo(b['Date']!));
+    history.sort((a,b)=> b['Date']!.compareTo(a['Date']!));
     return Scaffold(
       appBar: AppBar(
         title: Center(child:Text('History',style: TextStyle(color: Colors.white),)),
