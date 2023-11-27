@@ -188,7 +188,7 @@ class _HomeState extends State<Home> {
                 onChanged: (String? selected) {
                   setState(() {
                     vfrom = selected!;
-                    // calculate();
+                    calculate();
                   });
                 },
                 items: from.map((String value) {
@@ -235,6 +235,7 @@ class _HomeState extends State<Home> {
                 onChanged: (String? selected) {
                   setState(() {
                     vto = selected!;
+                    calculate();
                   });
                 },
                 items: to.map((String value) {
